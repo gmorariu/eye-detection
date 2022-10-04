@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PlayerDetailsController.viewWillAppear(_:):PlayerDetailsController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PlayersViewController.tableView(_:didSelectRowAt:):PlayersViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "PlayerDetailsController.viewDidLoad():PlayerDetailsController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CaptureAnswersController.onSubmit(_:):CaptureAnswersController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CaptureVideoController.onRecTouchDown(_:):CaptureVideoController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CaptureVideoController.prepare(for:sender:):CaptureVideoController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.identifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

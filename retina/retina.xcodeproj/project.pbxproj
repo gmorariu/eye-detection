@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A680C2110A6369ACCBF7051 /* Pods_retinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD1AFE517B95C6A31E5FC68 /* Pods_retinaTests.framework */; };
+		9B39C81D0E95FF059F43E5EC /* Pods_retina_retinaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5778A228384D679D1BDF9CA6 /* Pods_retina_retinaUITests.framework */; };
+		B760D28E26D3F2A300983928 /* LoginViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B760D28D26D3F2A300983928 /* LoginViewController .swift */; };
+		B760D29026D3F7D200983928 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760D28F26D3F7D200983928 /* Constants.swift */; };
+		B760D29226D3FDB500983928 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760D29126D3FDB500983928 /* AlertService.swift */; };
+		B762948D26536AD600A8FFDB /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762948C26536AD600A8FFDB /* PlayersTableViewCell.swift */; };
+		B762949126536FB400A8FFDB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949026536FB400A8FFDB /* Player.swift */; };
+		B7629493265378BC00A8FFDB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7629492265378BC00A8FFDB /* DataModel.swift */; };
+		B762949526537A4C00A8FFDB /* AddPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949426537A4C00A8FFDB /* AddPlayerController.swift */; };
+		B762949726538B1B00A8FFDB /* PlayerDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949626538B1B00A8FFDB /* PlayerDetailsController.swift */; };
+		B76294992653AACD00A8FFDB /* CaptureVideoLeftIntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76294982653AACD00A8FFDB /* CaptureVideoLeftIntroController.swift */; };
+		B762949B2653B54900A8FFDB /* CaptureAnswersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949A2653B54900A8FFDB /* CaptureAnswersController.swift */; };
+		B762949D2654134800A8FFDB /* Incident.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949C2654134800A8FFDB /* Incident.swift */; };
+		B762949F2654152A00A8FFDB /* IncidentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B762949E2654152A00A8FFDB /* IncidentTableViewCell.swift */; };
+		B76294A1265421AA00A8FFDB /* IncidentDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76294A0265421AA00A8FFDB /* IncidentDetailsController.swift */; };
+		B7B2FFE726FA1FCE00B2469C /* PlayerDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2FFE626FA1FCE00B2469C /* PlayerDetailsVC.swift */; };
+		B7B2FFE926FA287900B2469C /* Baseline.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2FFE826FA287900B2469C /* Baseline.swift */; };
+		B7B2FFEC26FA8C2F00B2469C /* PlayerDetailsTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B2FFEB26FA8C2F00B2469C /* PlayerDetailsTabController.swift */; };
+		B7BB5D0226DEB02E00A97F1B /* VideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB5D0126DEB02E00A97F1B /* VideoPlayerController.swift */; };
+		B7BB5D0826F1716D00A97F1B /* AWSS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB5D0726F1716D00A97F1B /* AWSS3Manager.swift */; };
+		B7BB5D0A26F50BD500A97F1B /* CreatePlayerBasicInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB5D0926F50BD400A97F1B /* CreatePlayerBasicInfoVC.swift */; };
+		B7BB5D0C26F50DDE00A97F1B /* CreatePlayerEmergencyContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BB5D0B26F50DDE00A97F1B /* CreatePlayerEmergencyContactVC.swift */; };
+		B7E5A32A266B198B002475A3 /* CaptureVideoPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E5A329266B198B002475A3 /* CaptureVideoPreviewController.swift */; };
+		B7F67F0E26FAA402001BE3F9 /* ViewCase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67F0D26FAA402001BE3F9 /* ViewCase.storyboard */; };
+		B7F67F1026FAAA9F001BE3F9 /* CreatePlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F67F0F26FAAA9F001BE3F9 /* CreatePlayer.storyboard */; };
+		B7F67F1326FAAC17001BE3F9 /* CreatePlayerVideoIntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67F1226FAAC17001BE3F9 /* CreatePlayerVideoIntroVC.swift */; };
+		B7F67F1526FAAE5B001BE3F9 /* CreatePlayerVideoCaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67F1426FAAE5B001BE3F9 /* CreatePlayerVideoCaptureVC.swift */; };
+		B7F67F1726FAB0BB001BE3F9 /* CreatePlayerSummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67F1626FAB0BB001BE3F9 /* CreatePlayerSummaryVC.swift */; };
+		B7F67F1926FADEFF001BE3F9 /* PlayerDetailsCasesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67F1826FADEFF001BE3F9 /* PlayerDetailsCasesVC.swift */; };
+		B7F67F1C270BF973001BE3F9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F67F1B270BF972001BE3F9 /* AccountVC.swift */; };
+		B7F68AF726533BE300F9B8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F68AF626533BE300F9B8BD /* AppDelegate.swift */; };
+		B7F68AF926533BE300F9B8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F68AF826533BE300F9B8BD /* SceneDelegate.swift */; };
+		B7F68AFB26533BE300F9B8BD /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F68AFA26533BE300F9B8BD /* PlayersViewController.swift */; };
+		B7F68AFE26533BE300F9B8BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F68AFC26533BE300F9B8BD /* Main.storyboard */; };
+		B7F68B0026533BE400F9B8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F68AFF26533BE400F9B8BD /* Assets.xcassets */; };
+		B7F68B0326533BE400F9B8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7F68B0126533BE400F9B8BD /* LaunchScreen.storyboard */; };
+		B7F68B0E26533BE400F9B8BD /* retinaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F68B0D26533BE400F9B8BD /* retinaTests.swift */; };
+		B7F68B1926533BE400F9B8BD /* retinaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F68B1826533BE400F9B8BD /* retinaUITests.swift */; };
+		D4F10648F4EF4DC399D2F0CE /* Pods_retina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57668547EB658D2477D8C631 /* Pods_retina.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7F68B0A26533BE400F9B8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F68AEB26533BE300F9B8BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F68AF226533BE300F9B8BD;
+			remoteInfo = retina;
+		};
+		B7F68B1526533BE400F9B8BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7F68AEB26533BE300F9B8BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7F68AF226533BE300F9B8BD;
+			remoteInfo = retina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2CD1AFE517B95C6A31E5FC68 /* Pods_retinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_retinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A9A48B57C80D9BC153B21A /* Pods-retina-retinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retina-retinaUITests.debug.xcconfig"; path = "Target Support Files/Pods-retina-retinaUITests/Pods-retina-retinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57668547EB658D2477D8C631 /* Pods_retina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_retina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5778A228384D679D1BDF9CA6 /* Pods_retina_retinaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_retina_retinaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CBBDCEC62D9F7BE62D235D9 /* Pods-retina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retina.debug.xcconfig"; path = "Target Support Files/Pods-retina/Pods-retina.debug.xcconfig"; sourceTree = "<group>"; };
+		8FA9FA2487A1B872BAE1D906 /* Pods-retina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retina.release.xcconfig"; path = "Target Support Files/Pods-retina/Pods-retina.release.xcconfig"; sourceTree = "<group>"; };
+		B760D28D26D3F2A300983928 /* LoginViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController .swift"; sourceTree = "<group>"; };
+		B760D28F26D3F7D200983928 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B760D29126D3FDB500983928 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		B762948C26536AD600A8FFDB /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
+		B762949026536FB400A8FFDB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = SOURCE_ROOT; };
+		B7629492265378BC00A8FFDB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		B762949426537A4C00A8FFDB /* AddPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerController.swift; sourceTree = "<group>"; };
+		B762949626538B1B00A8FFDB /* PlayerDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsController.swift; sourceTree = "<group>"; };
+		B76294982653AACD00A8FFDB /* CaptureVideoLeftIntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVideoLeftIntroController.swift; sourceTree = "<group>"; };
+		B762949A2653B54900A8FFDB /* CaptureAnswersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureAnswersController.swift; sourceTree = "<group>"; };
+		B762949C2654134800A8FFDB /* Incident.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incident.swift; sourceTree = "<group>"; };
+		B762949E2654152A00A8FFDB /* IncidentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentTableViewCell.swift; sourceTree = "<group>"; };
+		B76294A0265421AA00A8FFDB /* IncidentDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentDetailsController.swift; sourceTree = "<group>"; };
+		B7B2FFE626FA1FCE00B2469C /* PlayerDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsVC.swift; sourceTree = "<group>"; };
+		B7B2FFE826FA287900B2469C /* Baseline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baseline.swift; sourceTree = "<group>"; };
+		B7B2FFEB26FA8C2F00B2469C /* PlayerDetailsTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsTabController.swift; sourceTree = "<group>"; };
+		B7BB5D0126DEB02E00A97F1B /* VideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerController.swift; sourceTree = "<group>"; };
+		B7BB5D0726F1716D00A97F1B /* AWSS3Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSS3Manager.swift; sourceTree = "<group>"; };
+		B7BB5D0926F50BD400A97F1B /* CreatePlayerBasicInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerBasicInfoVC.swift; sourceTree = "<group>"; };
+		B7BB5D0B26F50DDE00A97F1B /* CreatePlayerEmergencyContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerEmergencyContactVC.swift; sourceTree = "<group>"; };
+		B7E5A329266B198B002475A3 /* CaptureVideoPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVideoPreviewController.swift; sourceTree = "<group>"; };
+		B7F67F0D26FAA402001BE3F9 /* ViewCase.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewCase.storyboard; sourceTree = "<group>"; };
+		B7F67F0F26FAAA9F001BE3F9 /* CreatePlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreatePlayer.storyboard; path = retina/CreatePlayer/CreatePlayer.storyboard; sourceTree = SOURCE_ROOT; };
+		B7F67F1226FAAC17001BE3F9 /* CreatePlayerVideoIntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerVideoIntroVC.swift; sourceTree = "<group>"; };
+		B7F67F1426FAAE5B001BE3F9 /* CreatePlayerVideoCaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerVideoCaptureVC.swift; sourceTree = "<group>"; };
+		B7F67F1626FAB0BB001BE3F9 /* CreatePlayerSummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerSummaryVC.swift; sourceTree = "<group>"; };
+		B7F67F1826FADEFF001BE3F9 /* PlayerDetailsCasesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailsCasesVC.swift; sourceTree = "<group>"; };
+		B7F67F1B270BF972001BE3F9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		B7F68AF326533BE300F9B8BD /* retina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = retina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F68AF626533BE300F9B8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7F68AF826533BE300F9B8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7F68AFA26533BE300F9B8BD /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		B7F68AFD26533BE300F9B8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7F68AFF26533BE400F9B8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F68B0226533BE400F9B8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7F68B0426533BE400F9B8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F68B0926533BE400F9B8BD /* retinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F68B0D26533BE400F9B8BD /* retinaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retinaTests.swift; sourceTree = "<group>"; };
+		B7F68B0F26533BE400F9B8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F68B1426533BE400F9B8BD /* retinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = retinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F68B1826533BE400F9B8BD /* retinaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = retinaUITests.swift; sourceTree = "<group>"; };
+		B7F68B1A26533BE400F9B8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA5844DAD3AB08C9275F74F2 /* Pods-retinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retinaTests.debug.xcconfig"; path = "Target Support Files/Pods-retinaTests/Pods-retinaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C09EBA31929176ADB55E6E4F /* Pods-retinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retinaTests.release.xcconfig"; path = "Target Support Files/Pods-retinaTests/Pods-retinaTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCFF0B6E437BA49519D22664 /* Pods-retina-retinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-retina-retinaUITests.release.xcconfig"; path = "Target Support Files/Pods-retina-retinaUITests/Pods-retina-retinaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7F68AF026533BE300F9B8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F10648F4EF4DC399D2F0CE /* Pods_retina.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B0626533BE400F9B8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A680C2110A6369ACCBF7051 /* Pods_retinaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B1126533BE400F9B8BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B39C81D0E95FF059F43E5EC /* Pods_retina_retinaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06DFCBB46DAB56CA2AFA4867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57668547EB658D2477D8C631 /* Pods_retina.framework */,
+				5778A228384D679D1BDF9CA6 /* Pods_retina_retinaUITests.framework */,
+				2CD1AFE517B95C6A31E5FC68 /* Pods_retinaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7F67F1126FAAB87001BE3F9 /* CreatePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B7F67F0F26FAAA9F001BE3F9 /* CreatePlayer.storyboard */,
+				B7BB5D0926F50BD400A97F1B /* CreatePlayerBasicInfoVC.swift */,
+				B7BB5D0B26F50DDE00A97F1B /* CreatePlayerEmergencyContactVC.swift */,
+				B7F67F1226FAAC17001BE3F9 /* CreatePlayerVideoIntroVC.swift */,
+				B7F67F1426FAAE5B001BE3F9 /* CreatePlayerVideoCaptureVC.swift */,
+				B7F67F1626FAB0BB001BE3F9 /* CreatePlayerSummaryVC.swift */,
+			);
+			path = CreatePlayer;
+			sourceTree = "<group>";
+		};
+		B7F67F1A2706458E001BE3F9 /* PlayerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B7B2FFEB26FA8C2F00B2469C /* PlayerDetailsTabController.swift */,
+				B762949626538B1B00A8FFDB /* PlayerDetailsController.swift */,
+				B7B2FFE626FA1FCE00B2469C /* PlayerDetailsVC.swift */,
+				B7F67F1826FADEFF001BE3F9 /* PlayerDetailsCasesVC.swift */,
+				B762949E2654152A00A8FFDB /* IncidentTableViewCell.swift */,
+			);
+			path = PlayerDetails;
+			sourceTree = "<group>";
+		};
+		B7F67F1D270C086E001BE3F9 /* CaseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				B7F67F0D26FAA402001BE3F9 /* ViewCase.storyboard */,
+				B76294A0265421AA00A8FFDB /* IncidentDetailsController.swift */,
+			);
+			path = CaseDetails;
+			sourceTree = "<group>";
+		};
+		B7F68AEA26533BE300F9B8BD = {
+			isa = PBXGroup;
+			children = (
+				B7F68AF526533BE300F9B8BD /* retina */,
+				B7F68B0C26533BE400F9B8BD /* retinaTests */,
+				B7F68B1726533BE400F9B8BD /* retinaUITests */,
+				B7F68AF426533BE300F9B8BD /* Products */,
+				DB27F0E7F47BC181F93E0F84 /* Pods */,
+				06DFCBB46DAB56CA2AFA4867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F68AF426533BE300F9B8BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F68AF326533BE300F9B8BD /* retina.app */,
+				B7F68B0926533BE400F9B8BD /* retinaTests.xctest */,
+				B7F68B1426533BE400F9B8BD /* retinaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F68AF526533BE300F9B8BD /* retina */ = {
+			isa = PBXGroup;
+			children = (
+				B7F67F1D270C086E001BE3F9 /* CaseDetails */,
+				B7F67F1A2706458E001BE3F9 /* PlayerDetails */,
+				B7F67F1126FAAB87001BE3F9 /* CreatePlayer */,
+				B7BB5D0726F1716D00A97F1B /* AWSS3Manager.swift */,
+				B762949026536FB400A8FFDB /* Player.swift */,
+				B7F68AF626533BE300F9B8BD /* AppDelegate.swift */,
+				B7F68AF826533BE300F9B8BD /* SceneDelegate.swift */,
+				B7F68AFA26533BE300F9B8BD /* PlayersViewController.swift */,
+				B760D28D26D3F2A300983928 /* LoginViewController .swift */,
+				B760D29126D3FDB500983928 /* AlertService.swift */,
+				B760D28F26D3F7D200983928 /* Constants.swift */,
+				B762949426537A4C00A8FFDB /* AddPlayerController.swift */,
+				B762948C26536AD600A8FFDB /* PlayersTableViewCell.swift */,
+				B7F68AFC26533BE300F9B8BD /* Main.storyboard */,
+				B7F67F1B270BF972001BE3F9 /* AccountVC.swift */,
+				B7BB5D0126DEB02E00A97F1B /* VideoPlayerController.swift */,
+				B762949C2654134800A8FFDB /* Incident.swift */,
+				B7B2FFE826FA287900B2469C /* Baseline.swift */,
+				B76294982653AACD00A8FFDB /* CaptureVideoLeftIntroController.swift */,
+				B7E5A329266B198B002475A3 /* CaptureVideoPreviewController.swift */,
+				B762949A2653B54900A8FFDB /* CaptureAnswersController.swift */,
+				B7F68AFF26533BE400F9B8BD /* Assets.xcassets */,
+				B7F68B0126533BE400F9B8BD /* LaunchScreen.storyboard */,
+				B7F68B0426533BE400F9B8BD /* Info.plist */,
+				B7629492265378BC00A8FFDB /* DataModel.swift */,
+			);
+			path = retina;
+			sourceTree = "<group>";
+		};
+		B7F68B0C26533BE400F9B8BD /* retinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F68B0D26533BE400F9B8BD /* retinaTests.swift */,
+				B7F68B0F26533BE400F9B8BD /* Info.plist */,
+			);
+			path = retinaTests;
+			sourceTree = "<group>";
+		};
+		B7F68B1726533BE400F9B8BD /* retinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F68B1826533BE400F9B8BD /* retinaUITests.swift */,
+				B7F68B1A26533BE400F9B8BD /* Info.plist */,
+			);
+			path = retinaUITests;
+			sourceTree = "<group>";
+		};
+		DB27F0E7F47BC181F93E0F84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CBBDCEC62D9F7BE62D235D9 /* Pods-retina.debug.xcconfig */,
+				8FA9FA2487A1B872BAE1D906 /* Pods-retina.release.xcconfig */,
+				35A9A48B57C80D9BC153B21A /* Pods-retina-retinaUITests.debug.xcconfig */,
+				CCFF0B6E437BA49519D22664 /* Pods-retina-retinaUITests.release.xcconfig */,
+				BA5844DAD3AB08C9275F74F2 /* Pods-retinaTests.debug.xcconfig */,
+				C09EBA31929176ADB55E6E4F /* Pods-retinaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7F68AF226533BE300F9B8BD /* retina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F68B1D26533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retina" */;
+			buildPhases = (
+				163D35A80E27B060AEB61580 /* [CP] Check Pods Manifest.lock */,
+				B7F68AEF26533BE300F9B8BD /* Sources */,
+				B7F68AF026533BE300F9B8BD /* Frameworks */,
+				B7F68AF126533BE300F9B8BD /* Resources */,
+				F583BC41BD0897C09A9437B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = retina;
+			productName = retina;
+			productReference = B7F68AF326533BE300F9B8BD /* retina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7F68B0826533BE400F9B8BD /* retinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F68B2026533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retinaTests" */;
+			buildPhases = (
+				ADF26AE555A08A35F6C717A5 /* [CP] Check Pods Manifest.lock */,
+				B7F68B0526533BE400F9B8BD /* Sources */,
+				B7F68B0626533BE400F9B8BD /* Frameworks */,
+				B7F68B0726533BE400F9B8BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F68B0B26533BE400F9B8BD /* PBXTargetDependency */,
+			);
+			name = retinaTests;
+			productName = retinaTests;
+			productReference = B7F68B0926533BE400F9B8BD /* retinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7F68B1326533BE400F9B8BD /* retinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7F68B2326533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retinaUITests" */;
+			buildPhases = (
+				3425B6818A770875BFB3081F /* [CP] Check Pods Manifest.lock */,
+				B7F68B1026533BE400F9B8BD /* Sources */,
+				B7F68B1126533BE400F9B8BD /* Frameworks */,
+				B7F68B1226533BE400F9B8BD /* Resources */,
+				63EF36EFDD56BB323E959D89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F68B1626533BE400F9B8BD /* PBXTargetDependency */,
+			);
+			name = retinaUITests;
+			productName = retinaUITests;
+			productReference = B7F68B1426533BE400F9B8BD /* retinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7F68AEB26533BE300F9B8BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "George Morariu";
+				TargetAttributes = {
+					B7F68AF226533BE300F9B8BD = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					B7F68B0826533BE400F9B8BD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B7F68AF226533BE300F9B8BD;
+					};
+					B7F68B1326533BE400F9B8BD = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = B7F68AF226533BE300F9B8BD;
+					};
+				};
+			};
+			buildConfigurationList = B7F68AEE26533BE300F9B8BD /* Build configuration list for PBXProject "retina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7F68AEA26533BE300F9B8BD;
+			productRefGroup = B7F68AF426533BE300F9B8BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7F68AF226533BE300F9B8BD /* retina */,
+				B7F68B0826533BE400F9B8BD /* retinaTests */,
+				B7F68B1326533BE400F9B8BD /* retinaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7F68AF126533BE300F9B8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F67F1026FAAA9F001BE3F9 /* CreatePlayer.storyboard in Resources */,
+				B7F68B0326533BE400F9B8BD /* LaunchScreen.storyboard in Resources */,
+				B7F67F0E26FAA402001BE3F9 /* ViewCase.storyboard in Resources */,
+				B7F68B0026533BE400F9B8BD /* Assets.xcassets in Resources */,
+				B7F68AFE26533BE300F9B8BD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B0726533BE400F9B8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B1226533BE400F9B8BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		163D35A80E27B060AEB61580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-retina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3425B6818A770875BFB3081F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-retina-retinaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63EF36EFDD56BB323E959D89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-retina-retinaUITests/Pods-retina-retinaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-retina-retinaUITests/Pods-retina-retinaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-retina-retinaUITests/Pods-retina-retinaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF26AE555A08A35F6C717A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-retinaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F583BC41BD0897C09A9437B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-retina/Pods-retina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-retina/Pods-retina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-retina/Pods-retina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7F68AEF26533BE300F9B8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F67F1326FAAC17001BE3F9 /* CreatePlayerVideoIntroVC.swift in Sources */,
+				B762949D2654134800A8FFDB /* Incident.swift in Sources */,
+				B762948D26536AD600A8FFDB /* PlayersTableViewCell.swift in Sources */,
+				B7B2FFEC26FA8C2F00B2469C /* PlayerDetailsTabController.swift in Sources */,
+				B7F68AFB26533BE300F9B8BD /* PlayersViewController.swift in Sources */,
+				B76294992653AACD00A8FFDB /* CaptureVideoLeftIntroController.swift in Sources */,
+				B760D28E26D3F2A300983928 /* LoginViewController .swift in Sources */,
+				B7F67F1526FAAE5B001BE3F9 /* CreatePlayerVideoCaptureVC.swift in Sources */,
+				B7BB5D0C26F50DDE00A97F1B /* CreatePlayerEmergencyContactVC.swift in Sources */,
+				B7E5A32A266B198B002475A3 /* CaptureVideoPreviewController.swift in Sources */,
+				B7F68AF726533BE300F9B8BD /* AppDelegate.swift in Sources */,
+				B760D29026D3F7D200983928 /* Constants.swift in Sources */,
+				B762949B2653B54900A8FFDB /* CaptureAnswersController.swift in Sources */,
+				B7F67F1726FAB0BB001BE3F9 /* CreatePlayerSummaryVC.swift in Sources */,
+				B762949526537A4C00A8FFDB /* AddPlayerController.swift in Sources */,
+				B7B2FFE926FA287900B2469C /* Baseline.swift in Sources */,
+				B7BB5D0A26F50BD500A97F1B /* CreatePlayerBasicInfoVC.swift in Sources */,
+				B762949F2654152A00A8FFDB /* IncidentTableViewCell.swift in Sources */,
+				B762949126536FB400A8FFDB /* Player.swift in Sources */,
+				B7B2FFE726FA1FCE00B2469C /* PlayerDetailsVC.swift in Sources */,
+				B7BB5D0826F1716D00A97F1B /* AWSS3Manager.swift in Sources */,
+				B7BB5D0226DEB02E00A97F1B /* VideoPlayerController.swift in Sources */,
+				B7F68AF926533BE300F9B8BD /* SceneDelegate.swift in Sources */,
+				B760D29226D3FDB500983928 /* AlertService.swift in Sources */,
+				B7F67F1926FADEFF001BE3F9 /* PlayerDetailsCasesVC.swift in Sources */,
+				B76294A1265421AA00A8FFDB /* IncidentDetailsController.swift in Sources */,
+				B7629493265378BC00A8FFDB /* DataModel.swift in Sources */,
+				B7F67F1C270BF973001BE3F9 /* AccountVC.swift in Sources */,
+				B762949726538B1B00A8FFDB /* PlayerDetailsController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B0526533BE400F9B8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F68B0E26533BE400F9B8BD /* retinaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7F68B1026533BE400F9B8BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F68B1926533BE400F9B8BD /* retinaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F68B0B26533BE400F9B8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F68AF226533BE300F9B8BD /* retina */;
+			targetProxy = B7F68B0A26533BE400F9B8BD /* PBXContainerItemProxy */;
+		};
+		B7F68B1626533BE400F9B8BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7F68AF226533BE300F9B8BD /* retina */;
+			targetProxy = B7F68B1526533BE400F9B8BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7F68AFC26533BE300F9B8BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F68AFD26533BE300F9B8BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7F68B0126533BE400F9B8BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F68B0226533BE400F9B8BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7F68B1B26533BE400F9B8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7F68B1C26533BE400F9B8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7F68B1E26533BE400F9B8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CBBDCEC62D9F7BE62D235D9 /* Pods-retina.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7F68B1F26533BE400F9B8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA9FA2487A1B872BAE1D906 /* Pods-retina.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7F68B2126533BE400F9B8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5844DAD3AB08C9275F74F2 /* Pods-retinaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retinaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/retina.app/retina";
+			};
+			name = Debug;
+		};
+		B7F68B2226533BE400F9B8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C09EBA31929176ADB55E6E4F /* Pods-retinaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retinaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/retina.app/retina";
+			};
+			name = Release;
+		};
+		B7F68B2426533BE400F9B8BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35A9A48B57C80D9BC153B21A /* Pods-retina-retinaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = retina;
+			};
+			name = Debug;
+		};
+		B7F68B2526533BE400F9B8BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFF0B6E437BA49519D22664 /* Pods-retina-retinaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JM46UTK2U;
+				INFOPLIST_FILE = retinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = retina.retinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = retina;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7F68AEE26533BE300F9B8BD /* Build configuration list for PBXProject "retina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F68B1B26533BE400F9B8BD /* Debug */,
+				B7F68B1C26533BE400F9B8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F68B1D26533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F68B1E26533BE400F9B8BD /* Debug */,
+				B7F68B1F26533BE400F9B8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F68B2026533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F68B2126533BE400F9B8BD /* Debug */,
+				B7F68B2226533BE400F9B8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7F68B2326533BE400F9B8BD /* Build configuration list for PBXNativeTarget "retinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7F68B2426533BE400F9B8BD /* Debug */,
+				B7F68B2526533BE400F9B8BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7F68AEB26533BE300F9B8BD /* Project object */;
+}
